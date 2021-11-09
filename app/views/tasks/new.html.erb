@@ -1,0 +1,12 @@
+  <div class="m-9">
+    <%= form_for(@task) do |f| %>
+    <%= f.label :title %>
+      <%= f.text_field :title %>
+      <%= f.text_field :details %>
+      <%= f.submit %>
+    <% end %>
+
+    <%= link_to tasks_path do %>
+      <button type="button" class="btn btn-primary">Back to list</button>
+    <% end %>
+  </div>

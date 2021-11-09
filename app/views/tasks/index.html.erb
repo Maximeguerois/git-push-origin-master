@@ -1,0 +1,11 @@
+<div class="d-flex justify-content-center">
+<div class="card p-5">
+<h1>MY TASKS</h1>
+<ul>
+  <% @tasks.each do |task| %>
+    <li class="justify-content-center list-group-item list-group-item-action"><%= link_to task.title, task_path(task) %></li>
+  <% end %>
+</ul>
+<%= link_to "Create task", new_task_path %>
+</div>
+</div>
